@@ -1,3 +1,39 @@
+Installation instructions:
+Setting up the backend:
+1) Download the code to the root directory that you want and install all code from the backend and frontend repositpories.
+2) Set up backend
+   a) install Node js to your computer. This can be done through this link: https://nodejs.org/en/download
+   b) Navigate to your backend folder and install the dependencies using the commands
+       cd projectName backend
+       npm install
+   c) run the command npm install mongodb in your terminal
+   d)Create a MongoDB cloud atlas database. Create an account and a new cluster following this link:
+   https://account.mongodb.com/account/login?n=%2Fv2%2F653aa59ca9b4454e4a4d2fcc&nextHash=%23metrics%2FreplicaSet%2F653aa64db1eac81e7abd1638%2Fexplorer%2Ftest%2Fquestions%2Ffind
+
+   Once the cluster has been created, press connect and then connect to your application and copy the code provided
+
+   e) Once you have created a new cluster, create a .env file in the backend folder and paste the code copied in the previous step.
+   It should look like the following. 
+
+   ATLAS_URI = mongodb+srv://egustavsson94:<password>@cluster0.t5bzsx1.mongodb.net/?retryWrites=true&w=majority
+
+   Make sure to change the password to the password you set when starting the cluster.
+
+Setting up the frontend: 
+1) Navigate to your front end folder:
+   cd projectName frontend
+   npm install
+   npm start
+   
+2) Initialize the react app and install the other libraries you need by using the command:
+   npx create-react-app
+   npm i react-redux react-router-dom axios
+
+
+       
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
